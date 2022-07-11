@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.names {
+    width: 100%;
+    height: 100vh;
+    background: #f3f7fe;
+    padding: 10px 3%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.names h1 {
+    font-size: 75px;
+    position: relative;
+    z-index: 2;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #000;
+    cursor: pointer;
+}
+.names h1:hover {
+    -webkit-text-fill-color: #000;
+    transform: translateY(-10px);
+    transition: 0.25s;
+    text-shadow: 1px 1px 6px black;
+}
+.img-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 65.35%;
+    background-image: url(/Images/wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.25s;
+}
+.names h1:nth-child(1):hover ~ .img-box {
+    background-image: url(/Images/apple.jpg);
+    transition: 0.25s;
+}
+.names h1:nth-child(2):hover ~ .img-box {
+    background-image: url(/Images/orange.jpg);
+    transition: 0.25s;
+}
+.names h1:nth-child(3):hover ~ .img-box {
+    background-image: url(/Images/strawberry.jpg);
+    transition: 0.25s;
+}
